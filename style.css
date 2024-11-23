@@ -1,0 +1,951 @@
+
+/* Basic need for website css  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+
+:root {
+
+    --primary : #29e9bc;
+    --normal : #fafafa;
+    --balck :  #13131a;
+    --bg : #0c1013;
+    --danger : #f75842;
+    --border : 0.1rem solid rgba(255, 255, 255, 0.3);
+
+    --container-width-lg : 80%;
+    --container-width-md  : 90%;
+    --container-width-sm  : 94%;
+
+}
+
+/* Universel Selector  */
+
+*{
+    font-family: "Roboto", serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline-offset: none ;
+    border: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style: none;
+    transition: all 0.5s linear;
+    scroll-behavior: smooth;
+
+
+}
+
+/* our google font  */
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+
+   /* Manage scroll behaviour and designe  */
+
+   ::-webkit-scrollbar{
+    width: 10px ;
+   }
+   ::-webkit-scrollbar{
+    background-color: var(--normal);
+   }
+   ::-webkit-scrollbar-thumb{
+
+    background-color: var(--balck);
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    background-color: var(--danger);
+   }
+ 
+
+  body{
+    line-height: 1.7;
+    color: var(--normal);
+    background-color: var(--bg);
+  }
+  
+  /* this is our  containers class for web responsive  */
+
+  .web-width{
+    width: var(--container-width-lg);
+    margin: 0, auto;
+  }
+
+  img{
+   width: 100%;
+   display: block;
+   object-fit: cover;
+  }
+
+  .btns{
+    background-color: var(--primary);
+    color: var(--balck);
+    display: inline-block;
+    padding: 0.5rem  2rem;
+    border: 1px solid transparent;
+    font-weight: 600;
+    border-radius: 0.3rem;
+  }
+  .btns:hover{
+    color: var(--normal);
+    background-color: transparent;
+    border: 1px solid var(--primary);
+  }
+
+  h1,h2,h3,h4{
+    line-height: 2rem;
+  }
+.border-bottoms {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: bold;
+
+  display: inline-block;
+  text-align: center;
+  margin-top: 3rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+  /* header section css start  */
+
+  /* logo part css  */
+
+  .header-section {
+    background-color: var(--balck);
+    padding-top: 1.8rem;
+    z-index: 1000;
+ 
+    
+  }
+
+.logo-span{
+    color: var(--primary);
+    
+    
+}
+
+.logo:hover{
+color: var(--primary) !important;
+  transform: rotateX(360deg);
+  transition: 1.2s;
+
+}
+.header-menu ul{
+  display: flex;
+  gap: 3rem;
+  z-index: 999;
+
+}
+.header-menu ul li a{
+  text-decoration: none;
+  color: var(--normal);
+ 
+}
+.header-menu ul li a:hover{
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: .8rem;
+}
+
+
+
+
+
+.open-menu-icon , .close-menu-icon{
+display: none;
+}
+
+  /* header section css end  */
+  
+
+/* Banner section css start  */
+
+.banner-section{
+ 
+  background-color: black;
+  position: relative;
+  
+}
+.banner-section::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--bg);
+  transform: skewY(-2.5deg);
+  bottom: -2rem;
+  left: 0;
+}
+.banner-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh ;
+ 
+}
+.banner-section h1,h2,h3{
+  line-height: 4rem;
+}
+.banner-text h1{
+  font-size: 3.6rem;
+  font-weight: 550;
+}
+
+.typed span{
+  color: var(--primary);
+  font-weight: bold;
+}
+.banner-img img{
+  width: 180% !important;
+
+margin-left: -16rem;
+
+overflow: hidden;
+z-index: -1;
+}
+
+
+/* Banndr section css end  */
+
+/* About section css start  */
+
+.about-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+.about-img img{
+  border: 3px solid var(--primary);
+  height: 12.5rem;
+  width: 12.5rem;
+  border-radius: 50%;
+  margin-right: 3rem;
+ 
+
+
+
+}
+
+.about-text button a {
+  text-decoration: none;
+  color: var(--balck);
+}
+.about-text button a:hover{
+  color: var(--normal);
+}
+.about-text{
+ width: 60%;
+}
+/* .about-img img {
+  height: 12.5rem;
+  width: 12.5rem;
+  border-radius: 50%;
+  border-radius: 3px solid var(--primary);
+  position: relative;
+} */
+
+
+/* About section css end  */
+
+
+/* service section css start  */
+
+.service-section{
+  margin: auto;
+  margin-top: 3rem;
+}
+.service-card{
+display: flex;
+gap: 3rem;
+}
+.card-item{
+  background-color: var(--primary);
+ color: var(--balck);
+ width: 20rem;
+ text-align: center;
+ padding-bottom: 2rem;
+ margin-bottom: 2rem;
+ position: relative;
+}
+.card-item span{
+  display: inline-block;
+  border: 1px solid var(--balck);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+ font-weight: bold;
+font-size: 2rem;
+line-height: 4rem;
+}
+.card-item:hover.card-item span{
+  background-color: var(--balck);
+  color: var(--normal);
+  border: 1px solid var(--normal);
+} 
+.card-item h3{
+  font-weight: bold;
+}
+
+.card-item a {
+  text-decoration: none;
+  background-color: var(--balck);
+  color: var(--normal);
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 30px;
+  border-radius: 1rem;
+ 
+}
+.card-item a:hover{
+  background-color: var(--normal);
+  border: 1px solid var(--balck);
+  color: var(--balck);
+ 
+}
+.card-item::before{
+  content: "";
+  height: 100%;
+  width:100%;
+  background-color: var(--normal);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .5s;
+  z-index: -1;
+}
+.card-item:hover.card-item::before{
+  transform: rotate(13deg);
+ transition: .5s;
+}
+.card-item p {
+  text-align: justify;
+  margin: 1rem 1rem;
+}
+/* service section css End */
+
+/* my skill section css start here  */
+
+
+
+.skil-card{
+ margin: auto;
+  width: 40rem;
+  height: auto;
+  background-color: var(--balck);
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  border-radius: 0.7rem;
+
+}
+.skill-text{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.skill-item{
+  margin-bottom: 1rem;
+}
+
+.progress-line{
+ 
+  background-color: var(--primary);
+  font-weight: bold;
+
+ 
+}
+
+/* my skill section css End  here  */
+
+/* my portfolio section css start here  */
+
+
+.portfolio-section{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.portfolio-img img{
+  width: 20rem;
+  height: 10rem;
+  margin: 0.7rem;
+}
+.portfolio-img{
+  box-shadow: 1px 1px 2px var(--primary);
+  overflow: hidden;
+}
+.portfolio-img img:hover{
+  transform: scale(1.4);
+}
+
+/* my portfolio section css end  here  */
+
+/* my popular work section css start here  */
+.popular-works-section{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.my-work{
+ width: 20rem;
+ background-color: var(--balck);
+text-align: center;
+overflow: hidden;
+padding-bottom: 2rem;
+transition: .6s;
+}
+.my-work:hover{
+  box-shadow: 1px 1px 5px var(--primary);
+  transition: .6s;
+}
+.my-work img:hover{
+  transform: scale(1.1);
+}
+.my-work h3{
+  font-size: 1.5rem ;
+  font-weight: bold;
+  
+}
+.my-work img{
+  width: 20rem;
+  overflow: hidden;
+}
+.my-work p {
+  text-align:justify;
+  margin: 1rem 1rem;
+}
+.my-work button a {
+  text-decoration: none;
+  color: var(--balck);
+
+}
+
+.my-work button a:hover{
+  color: white;
+}
+/* my popular work section css End here  */
+
+/* Frequent Asked Question Section  Css Start Here  */
+
+.faq-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+.faq-icon{
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.faq-qusetion{
+  margin-top: 1.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.faq-card{
+  display: flex;
+  cursor: pointer;
+  height: fit-content;
+  text-align: justify;
+  gap: 1.5rem;
+  width: 30rem;
+  background-color: #29e9bc;
+  border-radius: .7rem;
+  color: black;
+  padding: 2rem;
+
+}
+.faq-qusetion h3{
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.faq-qusetion p{
+  display: none;
+  transition: .6s;
+}
+
+.faq-qusetion.open p{
+  display: block;
+  transition: .6s;
+}
+/* Frequent Asked Question Section  Css End  Here  */
+
+/* Footer section css start here  */
+.main-footer{
+  background-color: var(--balck);
+}
+.footer-section {
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 4rem;
+ 
+}
+
+
+.my-self-part{
+  width: 15rem;
+  text-align: left;
+}
+.Permalinks-part h4{
+  margin-left: 1.8rem;
+}
+.Permalinks-part ul li a {
+  display: inline-block;
+  margin-bottom: .7rem;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  transition: .5s;
+}
+
+.Permalinks-part ul li a:hover{
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: .3rem;
+  color: var(--primary);
+  transition: .5s;
+}
+
+.Privacy-part h4{
+  margin-left: 1.8rem;
+}
+.Privacy-part ul li a {
+  display: inline-block;
+  margin-bottom: .7rem;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  transition: .5s;
+}
+
+
+.Privacy-part ul li a:hover{
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: .3rem;
+  color: var(--primary);
+  transition: .5s;
+
+}
+
+.ContactMe-part h4{
+  margin-left: 1.8rem;
+}
+
+.ContactMe-part ul li a {
+  display: inline-block;
+  margin-bottom: .7rem;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  transition: .5s;
+  text-transform: lowercase;
+}
+.ContactMe-part ul li a:hover{
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: .3rem;
+  color: var(--primary);
+  transition: .5s;
+}
+
+.contact-icon{
+  display: flex;
+  gap: .4rem;
+ 
+}
+.icon-item a {
+  color: white;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  transition: .3s;
+
+}
+
+.icon-item a:hover{
+  color: var(--primary);
+  transition: .3s;
+  
+}
+
+.copyright-section h6{
+  text-align: center;
+  padding: 3rem;
+  border-top: 1px solid var(--normal);
+}
+/* Footer section css End  here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Midea Queries for tablate Responsive start  */
+
+@media screen and (max-width:1024px) {
+
+  body{
+    .web-width{
+      width: var(--container-width-md);
+    margin: 0, auto;
+    }
+  }
+
+  .open-menu-icon , .close-menu-icon{
+    display: block;
+    cursor: pointer;
+    text-align: right;
+    font-size: 1.8rem;
+    }
+    .close-menu-icon{
+      display: none;
+    }
+    h1,h2,h3,h4{
+      line-height: 1.7rem;
+    }
+ 
+
+/* Header part start */
+
+.header-menu{
+  position: relative;
+  
+}
+
+.tablate-header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+  .header-menu ul{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    position: absolute;
+    left: 10rem;
+    top: 4rem;
+    background-color:var(--primary);
+    justify-content: center;
+    text-align: center;
+    display: none;
+ 
+  
+  }
+  .header-menu ul li{
+    width: 25rem;
+    padding: .6rem;
+    margin-left: -2.1rem;
+ 
+  }
+  .header-menu ul li a{
+margin: 0 !important;
+  }
+  .header-menu ul li:hover{
+    background-color: var(--balck);
+
+  }
+
+ .header-menu ul li a{
+  text-decoration: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  
+ 
+}
+.header-menu ul li a:hover{
+  color: var(--primary);
+  border-bottom: none;
+  padding-bottom: 0rem;
+}
+
+
+
+  /* Header part End  */
+
+
+}
+
+/* Midea Queries for tablate Responsive End */
+
+
+
+
+/* Responsive mediam device start  */
+
+@media screen and (max-width:962px) {
+
+  body{
+    .web-width{
+      width: var(--container-width-md);
+    margin: 0, auto;
+    }
+  }
+  
+  h1,h2,h3,h4{
+    line-height: 1.5rem;
+  }
+/* Header part start  */
+
+.header-menu ul{
+  left: 5rem;
+  top: 3rem;
+  
+}
+
+.open-menu-icon i {
+color: var(--primary);
+
+
+}
+
+.close-menu-icon {
+  color:var(--primary);
+  
+}
+
+.open-menu-icon , .close-menu-icon{
+
+padding-top: 1.7rem;
+ 
+  }
+
+  .banner-text h1{
+    font-size: 1.8rem;
+  }
+ .banner-text h2{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+
+ }
+  .banner-text h3{
+    font-size: 1rem;
+   
+  }
+
+ 
+/* Header part End */ 
+
+/* Banner section start  */
+
+.banner-img img{
+  width: 170% !important;
+
+margin-left: -8rem;
+
+}
+
+
+/* Banner section end */
+
+
+
+
+
+
+
+
+
+}
+
+
+
+  
+
+/* Responsive mediam device End  */
+
+
+
+/* Responsive mid- mediam  device start  */
+@media screen and (max-width:720px) {
+ 
+  body{
+    .web-width{
+      width: var(--container-width-sm);
+    margin: 0, auto;
+    }
+  }
+
+  h1,h2,h3,h4{
+    line-height: 1.3rem;
+  }
+  
+  .open-menu-icon , .close-menu-icon{
+    padding: 0rem;
+   margin-top: -2rem;
+    }
+
+    .banner-section{
+      padding-bottom: 5rem;
+    }
+    .banner-text{
+
+      margin-top: 2rem;
+      text-align: center;
+      z-index: 999;
+    }
+
+.banner-text h2{
+  margin-bottom: 3rem;
+ }
+
+
+ /* about-section start */
+
+.about-img{
+  width: 100%;
+  display: block;
+}
+
+.about-section{
+  display:block;
+  text-align: center;
+  margin: auto;
+}
+.about-img a{
+  display: inline-block;
+text-align: center;
+margin: auto;
+margin: 2rem 0rem;
+
+}
+
+.about-text{
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+ /* about-section end */
+
+ /* service-section start  */
+.service-card{
+  display: block;
+  text-align: center;
+}
+.card-item{
+  margin: auto;
+margin-bottom: 2rem;
+}
+.card-item span{
+margin-bottom: 1.5rem;
+}
+ /* service-section end  */
+
+
+ /* popular-work section start  */
+
+ .popular-works-section{
+  display: block;
+  text-align: center;
+ }
+.my-work{
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.my-work h3{
+ margin-top: 2rem;
+  
+}
+
+.portfolio-img{
+  margin-bottom: 2rem;
+}
+ /* popular-work section  End  */
+
+/* footer part start  */
+
+.footer-section{
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.my-self-part{
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.Permalinks-part{
+  margin-bottom: 3rem;
+}
+.Privacy-part{
+  margin-bottom: 3rem;
+}
+.contact-icon{
+  justify-content: space-between;
+}
+/* footer part end  */
+
+
+
+
+}
+
+
+/* Responsive mid- mediam  device end  */
+
+
+/* Responsive small  device start  */
+@media screen and (max-width:480px) {
+  
+
+  body{
+    .web-width{
+      width: var(--container-width-sm);
+    margin: 0, auto;
+    }
+  }
+
+
+  h1,h2,h3,h4{
+    line-height: 1.1rem;
+  }
+.header-menu ul{
+  margin-left: -5rem;
+}
+
+}
+
+/* Responsive small  device start  */
